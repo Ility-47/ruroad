@@ -1,0 +1,79 @@
+* {padding: 0;margin: 0;border: 0;}
+  *, *:before, :after {-webkit-box-sizing: border-box;box-sizing: border-box;}  
+  :focus, :active {outline: none;}  
+  a:focus, a:active {outline: none;} 
+  nav, footer, header, aside {display: block;} 
+  html, body {
+    height: 100%;
+    width: 100%;
+    font-size: 100%;
+    line-height: 100%;} 
+  input, button, textarea {font-family: inherit;}  
+  input::-ms-clear {display: none;}  
+  button {cursor: pointer;}
+  button::-moz-focus-inner {padding: 0;border: 0;}
+  a, a:visited {text-decoration: none;}
+  a:hover {text-decoration: none}
+  ul li {list-style: none;}
+  img {vertical-align: top;}
+  h1, h2, h3, h4, h5, h6 {font-size: inherit;font-weight: inherit;}
+
+
+body{
+  background-image: url('image/fon.jpg');
+  overflow: hidden;
+}
+
+.container{
+    margin: 0 auto;
+    width: 750px;
+    height: 100vh;
+    position: relative;
+}
+
+.car{
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 400px;
+  z-index: 1000;
+  transition: .7s;
+}
+
+.car img{
+  width: 200px;
+}
+
+.fon{
+  width: 750px;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  animation: preriv 6s linear infinite ;
+}
+
+.fon img{
+  width: 750px;
+}
+
+
+@keyframes preriv {
+  0%{top: -2560px;}
+  100%{top: 0;}
+}
+
+.gaz{
+  width: 317px;
+  height: 704px;
+  position: absolute;
+  background-image: url('image/gaz.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  z-index: 1000;
+  animation: gazel 5s linear infinite; 
+}
+
+@keyframes gazel {
+  0%{top: -800px;}
+  100%{top: 2000px;}
+}
